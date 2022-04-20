@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Remember us</title>
+	<link href="@font-face {
+    				font-family: 'SangSangShinb7';
+    				src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff');
+   					font-weight: normal; font-style: normal; }">
+
+	<link href="@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');">
+
+		<style type="text/css">
+
+
+			a{	font-size: 30px;
+				background: none;
+				width: 50px; height: 50px;
+				margin-left: 50px; margin-right: 50px;
+				text-decoration: none;
+				color: white;}
+			
+
+			a:hover{ 
+				color: #FF86FF;
+				transition: all 0.3s;}
+
+
+
+			body {
+				margin: 0;
+				background-color: black;
+			}
+
+			a,h3{font-family: 'SangSangShinb7', sans-serif;}
+			body, h1, h2, p, div, ul, li{font-family: NanumSquare, sans-serif; margin: 0; padding: 0;}
+		
+
+			h2 {
+				font-size: 40px;
+				margin-top: 30px;
+				line-height: 55px;
+			}
+
+			h3 {
+				font-size: 35px;
+				margin-top: 30px;
+				line-height: 55px;
+			}
+
+			p {
+				font-size: 24px;
+				margin-top: 30px;
+				line-height: 40px;
+			}
+
+			.center-contents-div {
+				display: flex;
+				justify-content: center;
+			}
+
+			.user1-img-table {
+				width: 100%;
+				background: black;
+				margin: auto;
+				height: 400px;
+				display: flex;
+				padding: 0px 0px;
+				justify-content: center;
+			}
+
+			.user1-img-row {
+				width: 450px;
+			}
+
+			.user1-img-size {
+				display: block;
+				width: 230px;
+				margin: auto;
+				margin-top: 50px;
+			}
+
+			#back-ground-wrapper {
+				position: relative;
+				height: 2100px;
+			}
+
+			#back-ground-header {
+				position: absolute;
+				top: 0;
+				width: 1920px;
+				margin-top: -600px;
+				margin-left: -50px;
+			}
+
+			#back-ground-light {
+				width: 100%;
+				position: absolute;
+				top: 0;
+				height: 230vh;
+				background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1)), url(ground-light.jpg);
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+			}
+
+			.col2 {
+				display: flex;
+				justify-content: center;
+			}
+
+			.text-center {
+				text-align: center;
+			}
+
+			.text-white {
+				color: white;
+			}
+
+			.back {
+				background-image: url('end.svg');
+				width: 1560px;
+				height: 200px;
+				background-position: center;
+				background-size: 100% auto;
+			}
+
+		
+
+			.bg-header{
+				right: 0px;
+				padding-top: 20px;
+			}
+
+			#back-ground-grayscale {
+				background-image: linear-gradient(180deg, rgba(0,0,0,1) 8%, rgba(0,0,0,0) 50% ,rgba(0,0,0,1)100%), url(ground-grayscale.jpg); background-repeat: no-repeat;
+				width: 100%;
+				height: 1400px; /* 섹션 총 넓이 */
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				margin-top: 50px;
+			}
+
+			#back-ground-grayscale:hover {
+				background-image: linear-gradient(180deg, rgba(0,0,0,1) 8%, rgba(0,0,0,0) 50%, rgba(0,0,0,1)100%), url(ground-hover.jpg); background-repeat: no-repeat;
+				width: 100%;
+				height: 1400px;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				margin-top: 50px;
+			}
+
+				#corridor-grayscale {
+				background-image: linear-gradient(180deg, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 95% ), url(corridor.jpg); background-repeat: no-repeat;
+				width: 100%;
+				height: 1600px; /* 섹션 총 넓이 */
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				margin-top: 50px;
+			}
+
+			#corridor-grayscale:hover {
+				background-image: linear-gradient(180deg, rgba(0,0,0,0)70%, rgba(0,0,0,1) 95%), url(corridor-sound.jpg); background-repeat: no-repeat;
+				width: 100%;
+				height: 1600px;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				margin-top: 50px;
+			}
+
+				#nayo-class-grayscale {
+				background-image: linear-gradient(180deg, rgba(0,0,0,1) 8%, rgba(0,0,0,0) 50%, rgba(0,0,0,1)100%), url(nayo-class.jpg); background-repeat: no-repeat;
+				width: 100%;
+				height: 800px; /* 섹션 총 넓이 */
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				margin-top: 50px;
+			}
+
+			#nayo-class-grayscale:hover {
+				background-image: linear-gradient(180deg, rgba(0,0,0,1) 8%, rgba(0,0,0,0) 50%, rgba(0,0,0,1)100%), url(nayo-class-hov.jpg); background-repeat: no-repeat;
+				width: 100%;
+				height: 800px;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				margin-top: 50px;
+			}
+
+			.section-about{
+				width: 100%;
+				height: 500px;
+			}
+
+			.section-bibi{
+				width: 100%;
+				height: 500px;
+			}
+
+			.section-black{
+				width: 100%;
+				height: 500px;
+
+			}
+
+
+
+
+			
+
+		</style>
+</head>
+
+<body>
+	
+
+	<section class="section-top" style="position: relative;">
+		<header class="bg-header" style="position: absolute;">
+		<div class="button">
+			<nav>
+				<a href="#1">about</a>
+				<a href="#2">story</a>
+				<a href="#3">get</a>
+			</nav>
+		</div>
+	</header>
+		<div class="div-size">
+			<img src="bg.jpg" style="width: 100%">
+		</div>
+	</section>
+
+
+	<section>
+		<div class="row center-contents-div" id="1">
+			<div class="text-white" style="padding-left: 10%; padding-right: 10%;">
+				<h2>어른이 되면서 어느 순간<br>무서워진게 많은 어른이들에게</h2>
+
+				<p class="text-white">Remember us는 조금 철이 없어도 용감무쌍하던 어린시절로 돌아가고싶은 여러분을 위해<br>
+					어린시절 상상 속에 늘 함께하던 친구들을 소환해드립니다. <br> 다섯 친구들을 모두 떠올리고 나면 새로운 도전도 정글짐 위를 올라가는 것처럼 쉬워지지 않을까요? <Br> 걱정이
+					많은 어른이라면 Remember us를 통해 잊고 지내던 기억 속 친구들을 만나고 용기를 얻어보세요. </p>
+				<p class="text-gray">Tip. 어린시절 친구들은 여러분의 기억저편 추억의 장소에 숨어있기 때문에 눈을 꼭 감고 장소를 떠올리면 만날 수 있습니다.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-user">
+		<div class="center-contents-div" style="padding-top: 100px;">
+			<div class="user1-img-table">
+				<div class="col-2 user1-img-row">
+					<img class="user1-img-size " src="user1.jpg">
+					<p class="text-center text-white">새로운 직장도 학교도 늘<br>걱정이 앞서는 어른이</p>
+				</div>
+
+				<div class="col-2 user1-img-row">
+					<img class="user1-img-size " src="user2.jpg">
+					<p class="text-center text-white">기쁘고 슬픈 감정을 맘껏<br>표현하기 어려워진 어른이</p>
+				</div>
+
+				<div class="col-2 user1-img-row">
+					<img class="user1-img-size " src="user3.jpg">
+					<p class="text-center text-white">작은 지적에도 혼난 것 처럼<br>주눅이 쉽게 드는 어른이 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+			<div class="text-white">
+				<p class="text-white text-center" style="margin-top: 200px; margin-bottom: 50vh;">걱정이 많은 어린이들을 위한 동심 찾기 프로젝트!<br> 준비되셨나요?</p>
+			</div>
+	</section>
+
+
+	<section>
+			<div id="2">
+				<img src="open-eye.jpg" style="width:50%; margin-top: 10vh; margin-left: 25vw;" >
+			</div>
+	</section>
+
+	<section >
+			<div class="text-white">
+				<h3 class="text-white text-center" style="margin-top: 150px; font-size: 3em;">그렇다면 서서히 기억 속으로 들어가보겠습니다.</h3>
+			</div>
+	</section>
+
+	<section>
+			<div>
+				<img src="close-eye.jpg" style="width:50%; margin-left: 25%; margin-top: 30%;" >
+			</div>
+	</section>
+
+	<section>
+			<div class="text-white">
+				<h3 class="text-white text-center" style="margin-top: 150px;font-size: 3em;">천천히 어린시절을 떠올려보세요.
+				</h3>
+			</div>
+	</section>
+
+		<section>
+			<div class="text-white">
+				<h3 class="text-white text-center" style="margin-top: 50%; font-size: 3em;">뭐가 보이시나요?</h3>
+			</div>
+	</section>
+
+
+	
+
+	<section class="section-img1 back1" id="back-ground-wrapper">
+		<div id="back-ground-light">
+			<img src="end.svg" >
+		</div>
+		
+	</section>
+	
+	<section>
+			<div>
+				<p class="text-white text-center" style="padding-top: 50px;">
+					가장 먼저 도착한 곳은 놀이터군요!<br>
+					놀이터는 모든 아이들의 무법지죠.<br>
+					지금은 어른이 되어 이것저것이 무서울지 몰라도<br>
+					그땐 미끄럼틀 위를 걸어도 무서울게 없었어요.<br>
+					<br>
+					마치 타잔처럼 어린시절 놀이터를 누비던 당신에겐 어떤 친구가 있었나요?</p>
+			</div>
+	</section>
+	<section id="back-ground-grayscale-wrapper">
+		<div id="back-ground-grayscale"></div>
+	</section>
+
+
+	<section style="position: relative;">
+
+		<div class="section-about" style="position: absolute;">
+			<img src="bibi-text.svg" style="width: 600px; margin-left: 100px; margin-top: 2vw;">
+		</div>
+
+		<div class="section-bibi" style="position:absolute;">
+			<img src="bibi-1.svg" style="width: 600px; filter: drop-shadow(10px 10px rgba(0,0,0,0.6)); 
+			float: right; margin-right: 15vw; margin-top: 25vh;">
+		</div>
+
+		<div class="section-about" style="position: absolute;">
+			<img src="voice-img.svg" style="width: 500px; margin-top: 400px; margin-left: 100px; filter: drop-shadow(10px 10px rgba(0,0,0,0.6));">
+		</div>
+
+
+	<section>
+		<div>
+			<img src="bibi-grass.svg" style="width:100%; margin-top: -20px;">
+		</div>
+	</section>
+
+
+	<section style="position: relative;">
+		<div class="section-about" style="position: absolute;">
+			<h3 style="font-size: 4em; color: #FF86FF; margin-left: 130px;">
+				혹시 제 도움이 필요하신가요?
+			</h3>
+			<img src="voice-img.svg" style="width: 800px; margin-top: -10px; margin-left: 45vw; filter: drop-shadow(10px 10px rgba(0,0,0,0.6));">
+		</div>
+
+		<div class="section-about" style="position: absolute; ">
+			<img src="bibi-2.svg" style="width: 620px; filter: drop-shadow(10px 10px rgba(0,0,0,0.6)); float: left; margin-left: 100px; margin-right: 10vw; margin-top: 20vh;">
+
+			<h3 style="margin-top:67vh; font-size: 5em; color: #FF86FF;">대담한 BiBi</h3>
+			<p style="color: #FF86FF; margin-top: -20px;">저는 높은 곳도, 새로운 곳도 긴팔로 성큼성큼 올라갈 수 있어요!<br>
+				무섭지 않은 BiBi는 모든 도전이 놀이터랍니다.<br>
+				요즘따라 새로운 곳에 적응하기 힘드시다면!<br>
+				특별히 제가 따라갈게요! 어디든지.
+			</p>
+		</div>
+		
+		<div>
+			<img src="bibi-back.svg" style="width:100%; margin-top: -1vh;">
+		</div>
+	</section>
+
+	<section class="section-black">
+		<div class="text-center" style="font-size: 100%; color: #FF86FF;">
+			<h3 style="font-size: 4em; line-height: 90px;">아, 참! <br>혹시 다른 친구들도 찾고 계시다면 한번 학교를 상상해보세요!</h3>
+
+		</div>
+			<div>
+				<img src="close-eye.jpg" style="width:40%; margin-left: 30%; margin-top: 5%;" >
+			</div>
+		
+	</section>
+
+	<section>
+		<div style="margin-top: 200px;">
+			<img src="end.svg" >
+		</div>
+	
+	</section>
+
+	<section id="corridor-grayscale-wrapper" style="margin-top: -450px">
+		<div id="corridor-grayscale" style="margin-top: -450px"></div>
+	</section>
+
+	<section>
+			<div>
+				<p class="text-white text-center" style="padding-top: 20px;">
+					여기가 당신의 기억 속 학교군요!<br><br>
+					공부하는게 힘들어도 참 따듯하고 재밌는 공간이에요.<br>
+					발표도 나서서하고 내친김에 회장도 하고 쉬는 시간에는 큰 소리로<br>
+					떠들며 추억을 만드니까요.<br>
+					학창시절의 아이들은 아주 멋진 말썽꾸러기들이에요.<br>
+					여기서 만날 친구도 그런 모습일까요?</p>
+			</div>
+	</section>
+
+<section id="nayo-class-grayscale-wrapper">
+		<div id="nayo-class-grayscale"></div>
+	</section>
+
+
+	<section style="position: relative;">
+
+		<div class="section-about" style="position: absolute;">
+			<img src="nayo-text.svg" style="width: 600px; margin-left: 100px; margin-top:-10px;">
+		</div>
+
+		<div class="section-bibi" style="position:absolute;">
+			<img src="nayo-1.svg" style="width: 600px; filter: drop-shadow(10px 10px rgba(0,0,0,0.6)); 
+			float: right; margin-right: 15vw; margin-top: -390px;">
+		</div>
+
+	<section>
+		<div>
+			<img src="nayo-grass.svg" style="width:100%; margin-top: -20px;">
+		</div>
+	</section>
+
+
+
+
+</body>
+
+</html>
